@@ -10,3 +10,4 @@ wrote a C program that pringts a text in 4-puts.c
 C program with printf
 print size
 a
+used %lu
