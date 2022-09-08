@@ -11,3 +11,4 @@ C program with printf
 print size
 a
 used %lu
+m
