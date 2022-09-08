@@ -4,3 +4,4 @@ first entry for readme hello_world
 compiler works
 works
 created separate 1-main.c works
+2-asseembler generates assembly code
