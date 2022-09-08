@@ -8,3 +8,4 @@ created separate 1-main.c works
 exe cisfun is born
 wrote a C program that pringts a text in 4-puts.c
 C program with printf
+print size
