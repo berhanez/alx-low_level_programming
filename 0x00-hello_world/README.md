@@ -3,3 +3,4 @@ first entry for readme hello_world
 1-compiler compiles but doesnt link
 compiler works
 works
+created separate 1-main.c works
