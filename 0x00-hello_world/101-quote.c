@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- *
  *  main - prints to string
- *
+ *  Description: Prints text without puts and printf
  *  Return: 1
  */
 int main(void)
@@ -13,6 +12,7 @@ int main(void)
 	long syscall = 1;
 	long ret = 0;
 	__asm__ ("syscall"
+
 			: "=a" (ret)
 			: "a" (syscall),
 			"D" (fd),
