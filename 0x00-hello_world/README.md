@@ -6,3 +6,4 @@ works
 created separate 1-main.c works
 2-asseembler generates assembly code
 exe cisfun is born
+wrote a C program that pringts a text in 4-puts.c
