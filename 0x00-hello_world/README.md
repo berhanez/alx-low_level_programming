@@ -14,3 +14,4 @@ used %lu
 m
 finally works
 done
+print string without puts
