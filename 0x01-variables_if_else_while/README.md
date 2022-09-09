@@ -2,3 +2,4 @@
 last digit
 both upper and lowercase alpha
 alphabet without some letters
+print numbers to 10
