@@ -8,3 +8,4 @@ reverse alphabet
 base 16
 combo of single digit number
 combo of two digit
+done
