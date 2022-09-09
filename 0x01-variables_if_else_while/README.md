@@ -5,3 +5,4 @@ alphabet without some letters
 print numbers to 10
 print numbers with putchar
 reverse alphabet
+base 16
