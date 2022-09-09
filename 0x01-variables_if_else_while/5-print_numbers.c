@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - print base 
+ * main - print base
  * Description: prints all base ten numbers
  * Return: 0
  */
