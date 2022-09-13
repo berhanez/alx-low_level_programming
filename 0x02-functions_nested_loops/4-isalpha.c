@@ -1,6 +1,7 @@
 #include "main.h"
-/*
+/**
  * _isalpha - Entry Point
+ * @c: int
  * Description: checks if it is alpha
  * @c: integer
  * Return: 1 for true, 0 for false
