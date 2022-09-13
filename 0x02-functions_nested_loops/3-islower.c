@@ -2,6 +2,7 @@
 /**
  * _islower - Entry Point
  * Description: checks if lower case and returns 1 if lowercase
+ * @c: integer
  * Return: 1 - true, 0 - false
  */
 int _islower(int c)
