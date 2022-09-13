@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _abs - Entry point
+ * @n: integer
  * Description: absolute value
  * Return: n
  */
