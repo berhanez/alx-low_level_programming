@@ -14,4 +14,4 @@ while (letter <= 'z')
 	letter++;
 }
 	_putchar('\n');
-}	
+	}
