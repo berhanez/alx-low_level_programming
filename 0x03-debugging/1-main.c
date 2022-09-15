@@ -2,6 +2,7 @@
 
 /**
  * main - causes an infinite loop
+ * @\\o/\n\": error enclosed in comment
  * Return: 0
  */
 int main(void)
@@ -13,10 +14,8 @@ int main(void)
 	i = 0;
 /**
  * while - while (i < 10)
- *
- * * Description: error enclosed in comment
  * { putchar(i); }
- *
+ * Return: 0
 */
 	printf("Infinite loop avoided! \\o/\n");
 
