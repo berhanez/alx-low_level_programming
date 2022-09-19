@@ -31,7 +31,7 @@ void rev_string(char *s)
  * string_length - string length
  * Description: Returns length
  * @pointer: pointer
- * @c: return length
+ * Return: C
  */
 
 int string_length(char *pointer)
