@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * rev_string - reverses a string
- * 
+ * string_length - finds length
+ * Description: String_lengteh feeds in to rev_string
+ * @s: string
  * Return: 0
  */
 void rev_string(char *s)
@@ -25,12 +27,19 @@ void rev_string(char *s)
 		end--;
 	}
 }
+/**
+ * string_length - string length
+ * Description: Returns length
+ * @pointer: pointer
+ * @c: return length
+ */
+
 int string_length(char *pointer)
 {
 	int c = 0;
 
-	while( *(pointer + c) != '\0' )
+	while (*(pointer + c) != '\0')
 		c++;
 
-	return c;
+	return (c);
 }
