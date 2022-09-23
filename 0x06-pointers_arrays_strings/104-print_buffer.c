@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_buffer - print buffe 10 byte at a time, start
- * 		with byte position, then showing hex 
- * 		content then display printable
+ * print_buffer - print buffe 10 byte at a time, strt
+ *	with byte position, then showing hex
+ *content then display printabl
  * @b: buffer
  * @size: size of b
  */
