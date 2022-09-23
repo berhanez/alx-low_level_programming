@@ -23,7 +23,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	}
 	for (; *n1; n1--, r_index--)
 	{
-		n = (*n - '0') + tens;
+		n = (*n1 - '0') + tens;
 		*(r + r_index) = (n % 10) + '0';
 		tens = n / 10;
 	}
