@@ -1,13 +1,15 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_buffer - print buffer
- * Description: prints buffer
+ * print_buffer - print buffe 10 byte at a time, start
+ * 		with byte position, then showing hex 
+ * 		content then display printable
  * @b: buffer
  * @size: size of b
  */
-void print_buffer(char *b, int size)
 
+void print_buffer(char *b, int size)
 {
 	int byte, index;
 
