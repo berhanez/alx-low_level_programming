@@ -1,4 +1,7 @@
 #include "main.h"
+int _sqrt_recursion(int n);
+int _sqrt_subfunction(int n, int y);
+
 /**
  * _sqrt_recursion - Return square root
  * @n: integer
