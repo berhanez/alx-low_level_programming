@@ -2,12 +2,13 @@
 #include <stdio.h>
 /**
  * main - print all arguments
- * @i: index
+ * @argc: counts arguments
+ * @argv: holds string of arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i;
 
 	for (i = 0; i < argc; i++)
 	{
