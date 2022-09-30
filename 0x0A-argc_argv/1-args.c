@@ -6,14 +6,8 @@
  * @argv: holds cmd arguments as string
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv __attribute__((unused)))
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		argv[i];
-	}
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
