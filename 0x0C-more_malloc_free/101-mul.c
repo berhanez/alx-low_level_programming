@@ -48,8 +48,8 @@ char *create_xarray(int size)
  */
 char *zero_loop(char *str)
 {
-	while (*str != '\0' && *str == '0')
-	       str++;
+	while ((*str != '\0') && (*str == '0'))
+		str++;
 
 	return (str);
 }
@@ -124,6 +124,7 @@ void get_prod(char *prod, char *mult, int d, int z)
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
 	int n, t = 0;
+
 	while (*(final_prod + 1))
 		final_prod++;
 	while (*(next_prod + 1))
@@ -144,7 +145,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		n = (*next_prod - '0');
 		n = n + t;
 		*final_prod = (n % 10) + '0';
-		t = n /10;
+		t = n / 10;
 
 		final_prod--;
 		next_prod--;
