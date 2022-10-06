@@ -6,15 +6,15 @@
  * @b: byte size of memory
  * Return: pointer to allocated memory
  */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
-	int *m;
+	void *m;
 
-	m =(int*)malloc(b);
+	m = malloc(b);
 
 	if (m == NULL)
-		return (98);
-	else if (m != NULL)
-		return (m);
-	return (void);
+	{
+		exit(98);
+	}
+		return(m);
 }
