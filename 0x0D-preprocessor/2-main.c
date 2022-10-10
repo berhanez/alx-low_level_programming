@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - prints file name
+ * Return: 0
+ */
 #ifndef _2_MAIN_C_
 #define _2_MAIN_C_
 
