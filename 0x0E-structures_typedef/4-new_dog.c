@@ -21,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (ndog == NULL)
 		return (NULL);
 
-	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	ndog->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (ndog->name == NULL)
 	{
 		free(ndog);
@@ -64,13 +64,12 @@ int _strlen(char *str)
  */
 char *_strcopy(char *dest, char *src)
 {
-        int i;
+	int i;
 
-        for (i = 0; src[i]; i)
-                dest[index] = src[index];
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
 
-        dest[index] = '\0';
-
-        return (dest);
+	return (dest);
 }
 
