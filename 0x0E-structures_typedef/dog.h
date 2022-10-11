@@ -13,7 +13,9 @@ struct dog
 	char *owner;
 };
 
-/* Lets define the typedef */
+/* Task 3: Lets define a new type 'dog_t' as new name 
+ * for struct dog with typedef 
+ */
 typedef struct dog dog_t;
 
 /* Prototypes */

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_dog - Frees dogs.
+ * free_dog - sets dogs frees(memory space)
  * @d: The dog to be freed.
  */
 
