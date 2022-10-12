@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 /**
  * array_iterator - executes a fn given as a parameter
- * 	on each element of array
+ * on each element of array
  * @size: size
  * @action: pointer to the function to be used here
  * @array: source for the elements to be iterated
