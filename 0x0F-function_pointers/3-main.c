@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * main - calculator 
+ * main - calculator
  * @argc: argument count
  * @argv: arguments values
  * Return: 0
