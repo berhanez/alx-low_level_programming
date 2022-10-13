@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 	}
 
 	bytes = atoi(argv[1]);
-	
+
 	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	
+
 	for (i = 0; i < bytes; i++)
 	{
 		op_code = *(unsigned char *)address;
