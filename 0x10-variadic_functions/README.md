@@ -8,7 +8,8 @@
 # TASK 0 : 0-sum_them_all.c
 // Function returns sum of all its parameters
 
-# TASK 1
+# TASK 1 : 1-print_numbers.c
+// Function prints numbers and separator passed to it
 
 # TASK 2
 
