@@ -11,6 +11,9 @@
 # TASK 1 : 1-print_numbers.c
 // Function prints numbers and separator passed to it
 
-# TASK 2
+# TASK 2 : 2-print_strings.c
+// Function prints strings separated by separator
 
-# TASK 3
+# TASK 3 : 3-print_all.c
+// Function prints everything. Different format conditions
+// Hard task, more research needed
