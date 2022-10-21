@@ -9,3 +9,6 @@
 * Task 3 - function that adds a new node at the end of a list_t list.
 * Task 4 - function that frees a list_t list.
 
+## Advanced Tasks
+* Task 100 - Print a sentence when main function is executed
+* Task 101 -  64-bit program in assembly that prints Hello, Holberton
