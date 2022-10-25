@@ -49,7 +49,7 @@ size_t free_listint_safe(listint_t **h)
 	return (nodes);
 }
 /**
- * free_listp2 - frees a linked list
+ * free_list_2 - frees a linked list
  * @head: head of a list.
  *
  * Return: no return.
