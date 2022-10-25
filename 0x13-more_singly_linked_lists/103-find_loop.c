@@ -19,14 +19,16 @@ listint_t *find_listint_loop(listint_t *head)
 		if (n1 == n2)
 		{
 			n1 = head;
+
 			while (n1 != n2)
 			{
 				n1 = n1->next;
 				n2 = n2->next;
 			}
+
 			return (n1);
 		}
-		n2 = n1->next;
+		n1 = n1->next;
 		n2 = (n2->next)->next;
 	}
 	return (NULL);
