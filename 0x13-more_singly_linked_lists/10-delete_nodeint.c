@@ -1,4 +1,4 @@
-#include "lists.h"
+include "lists.h"
 /**
  * delete_nodeint_at_index - deletes the node at index of listint_t
  * @head: start
@@ -20,13 +20,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(current);
 		return (1);
 	}
-	
+
 	while (n < (index - 1))
 	{
 		if (current->next == NULL)
 			return (-1);
 		current = current->next;
-		n++;	
+		n++;
 	}
 
 	temp = current->next;
