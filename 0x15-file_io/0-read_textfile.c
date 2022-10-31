@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * read_textfile - function reads a text file and prints it to stdout
  * @filename: name of text file
@@ -21,7 +21,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	readd = read(fd, buff, letters);
 	writer = write(STDOUT_FILENO, buff, readd);
-	if (fd == -1 || writer == -1 || readd == -1 || readd != writer)
+
+	if (fd == -1 || writer == -1 || readd == -1 || writer != readd)
 	{
 		free(buff);
 		return (0);
