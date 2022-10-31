@@ -9,16 +9,34 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	char buff[letters];
+	char *buff;
+	ssize_t readd, writer;
 	
-	fd = open("Requiescat", O_RDONLY);
-
+	
+	fd = open(filename, O_RDONLY);
+	
 	if (fd == -1 || filename == NULL)
 		exit (1);
-
-	read(fd, buff, letters);
-
+	
+	buff = malloc(sizeof(char) * letters);
+	if (buff == NULL)
+	{
+		close(fd);
+		return (0);
+	}
+	readd = read(fd, buff, letters);
 	close(fd);
-
-	return (buff);
-}	
+	
+	if (readd == -1)
+	{
+		free(buff);
+		return (0);
+	}
+	
+	writer = write(STDOUT_FILENO, buff, readd);
+	free(buff);
+	
+	if (readd != writer)
+		exit(1);
+	return (writer);
+}
