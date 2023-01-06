@@ -1,3 +1,9 @@
+#include "hash_tables.h"
+/**
+ * hash_djb2 - Takes a string and applies djb2 hashing alogorithm to get a hash
+ * @str: An unsigned char pointer to the string.
+ * Return: An unsigned long int value of the hash.
+ */
 unsigned long int hash_djb2(const unsigned char *str)
 {
     unsigned long int hash;
