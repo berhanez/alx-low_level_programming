@@ -70,7 +70,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	k_cp = strdup(key);
 	if (k_cp == NULL)
 		return (0);
-
 	new = malloc(sizeof(shash_node_t));
 	if (new == NULL)
 	{
@@ -83,14 +82,11 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	new->next = (ht->array)[i];
 	(ht->array)[i] = new;
 	insert_sorted(ht, new);
-
 	return (1);
 }
-
 /**
  * insert_sorted - Places the new element in the correct position of a sorted
  * hash table.
- *
  * @ht: Pointer to the hash table.
  * @new: Pointer to the newly created node.
  */
@@ -107,7 +103,6 @@ void insert_sorted(shash_table_t *ht, shash_node_t *new)
 		return;
 	}
 	cur = ht->shead;
-
 	while (cur != NULL)
 	{
 		if (strcmp(cur->key, new->key) > 0)
@@ -131,13 +126,10 @@ void insert_sorted(shash_table_t *ht, shash_node_t *new)
 		ht->stail = new;
 	}
 }
-
 /**
  * shash_table_get - Retrieves a value associated with a key.
- *
  * @ht: Pointer to the hash table.
  * @key: Pointer to a the key string.
- *
  * Return: Value associated with the key, or NULL if key couldn't be found.
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
@@ -149,9 +141,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	if (ht == NULL || key == NULL || strlen(key) == 0 ||
 			ht->array == NULL || ht->size == 0)
 		return (NULL);
-
 	i = key_index((const unsigned char *) key, ht->size);
-
 	cur = (ht->array)[i];
 	while (cur != NULL)
 	{
